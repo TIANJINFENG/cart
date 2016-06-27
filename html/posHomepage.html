@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet"  type="text/css"  href="posCreate.css">
+    <link rel="stylesheet"  type="text/css"  href="../css/posCreate.css">
 </head>
 <body>
-<div id="abstract">
-    <Button type="button" class="button" style="margin-left:90px;font-size:20px" >Let's Go</Button>
-    <Button type="button" class="button">主页</Button>
-    <Button type="button" class="button">商品列表</Button>
-    <input type="button" class="cartbutton"  id="imgbutton" value="购物车(0)" ></input>
+<div id="headlist">
+    <div class="gongnengbutton">
+    <Button class="buttonstyle "style="margin-left:90px;font-size:20px" >Let's Go</Button>
+    <Button class="buttonstyle ">主页</Button>
+    <Button class="buttonstyle">商品列表</Button>
+    </div>
+    <Button class="cartbutton"  id="imgbutton">购物车(0)</Button>
 </div>
-    <div class="abstrcats">
+    <div class="detail">
         <h1>Welcome to Let's Go!</h1>
         <h2>商店里进行购物结算时会使用收银机（POS）系统，这台收银机会在结算时根据客户的购物车
         （Cart）中的商品（Item）和商店正在进行的优惠活动（Promotion）进行结算和打印购物
@@ -20,7 +22,7 @@
         ，按照两件商品价格结算。我们需要实现一个名为printInventory函数，该函数能够将指定
         格式的数据作为参数输入，然后在浏览器的控制台中输出结算清单的文本。
         </h2>
-        <h3><input type="button" value="Let's Go"></h3>
+        <Button class="jump">Let's Go</Button>
     </div>
 </body>
 </html>

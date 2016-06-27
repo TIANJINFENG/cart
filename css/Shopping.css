@@ -1,0 +1,71 @@
+#abstract{
+    position: relative ;
+    height: 50px;
+    width: 1300px;
+    background-color: #000000;
+    top:-9px;
+    left:-9px;
+}
+.distance{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#button1{
+    margin-left:90px;
+    height: 50px;
+    width:110px;
+    font-size:20px;
+    font-weight: 700;
+    background-color: #000102;
+    color: #9c9a94;
+    border-color: #000102 ;
+}
+#button2{
+    height: 50px;
+    width:90px;
+    font-size:15px;
+    font-weight: 700;
+    background-color: #000000;
+    color: #9c9a94;
+    border-color: #000102 ;
+}
+#button3{
+    height: 50px;
+    width:110px;
+    font-size:15px;
+    font-weight: 700;
+    background-color: #000102;
+    color: #9c9a94;
+    border-color: #000102 ;
+}
+#button4{
+    height: 50px;
+    width:110px;
+    margin-left:700px;
+    font-size:15px;
+    font-weight: 700;
+    background-color: #000102;
+    color: #9c9a94;
+    border-color: #000102 ;
+}
+table,th,td{
+    border-collapse:collapse;
+    border:1px groove  #000000;
+}
+th.outtable{
+    border-radius:10px;
+    width: 1000px;
+    height:50px;
+    color:#dcd3dc;
+    text-indent:20px;
+    padding:10px;
+}
+td{
+    height:300px;
+}
+th.intable{
+    width:30px;
+    height:15px;
+    font-size:5px;
+}
+
