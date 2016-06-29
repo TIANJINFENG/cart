@@ -1,0 +1,98 @@
+#headmodule{
+    position: relative ;
+    height: 50px;
+    width: 1300px;
+    background-color: #3e3e3e;
+}
+body{
+    margin: 0px;
+}
+.listbutton:hover {
+    background-color: black;
+}
+.gongnengbutton{
+    width:1100px;
+    float: left;
+}
+.listbutton{
+    height:49px;
+    width:110px;
+    font-size:15px;
+    font-weight:800;
+    background-color: #3e3e3e ;
+    color: #9c9a94;
+    border:none;
+}
+.cartbutton:hover {
+    background-color: black;
+}
+.cartbutton{
+    height:50px;
+    width:100px;
+    font-size:15px;
+    font-weight:800;
+    background-color: #3e3e3e;
+    color: #9c9a94;
+    border: none ;
+}
+#imgstyle{
+    background-image: url(../images/shopping_cart.png);
+    background-repeat: no-repeat;
+    background-position:left center;
+    background-size: 19px 19px;
+}
+#inventoymodule{
+    margin: 30px 0px 0px 120px;
+}
+table,th,td{
+    border-collapse:collapse;
+    border:1px solid  rgba(156, 154, 148, 0.39);
+}
+.outborder{
+    _height:40px;
+    min-height:40px;
+    margin: 30px 0px 0px 120px;
+    border-radius:10px;
+    border:1px solid rgba(156, 154, 148, 0.39);
+    width:1100px;
+}
+h1{
+    font-weight: 600 ;
+    text-align: center ;
+    margin: 0px;
+    line-height:50px;
+    font-size: 20px;
+}
+.inborder{
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(219, 215, 209, 0.45);
+    border-bottom: 1px solid rgba(156, 154, 148, 0.39);
+    height:50px;
+}
+.outtable{
+    margin:20px 0px 10px 100px;
+    width:900px;
+}
+.attribute{
+    height:30px;
+    font-size: 15px;
+}
+th{
+    font-weight:200;
+}
+.goodstable{
+    height:45px;
+    font-size:12px;
+}
+td{
+    font-weight:100;
+    text-align: center;
+}
+.addcartbutton{
+    height: 30px;
+    background-color: #3096f7;
+    border-radius: 5px;
+    border: 0px ;
+    color: #fffbf4;
+}
+

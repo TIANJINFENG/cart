@@ -1,4 +1,4 @@
-#headlist{
+#headmodule{
     position: relative ;
     height: 50px;
     width: 1300px;
@@ -7,21 +7,21 @@
 body{
     margin: 0px;
 }
-.buttonstyle:hover {
+.listbutton:hover {
     background-color: black;
 }
 .gongnengbutton{
     width:1100px;
     float: left;
 }
-.buttonstyle{
+.listbutton{
     height:49px;
     width:110px;
     font-size:15px;
     font-weight:800;
     background-color: #3e3e3e ;
     color: #9c9a94;
-    border:none ;
+    border:none;
 }
 .cartbutton:hover {
     background-color: black;
@@ -35,7 +35,7 @@ body{
     color: #9c9a94;
     border: none ;
 }
-#imgbutton{
+#imgstyle{
     background-image: url(../images/shopping_cart.png);
     background-repeat: no-repeat;
     background-position:left center;
