@@ -9,9 +9,29 @@ body{
 }
 .listbutton:hover {
     background-color: black;
+    color: white ;
 }
-.gongnengbutton{
-    width:1100px;
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: #9c9a94;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: white ;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: white ;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.merger{
+    padding-left:90px;
+    width:78%;
     float: left;
 }
 .listbutton{
@@ -25,8 +45,10 @@ body{
 }
 .cartbutton:hover {
     background-color: black;
+    color: white ;
 }
 .cartbutton{
+    display:inline;
     height:50px;
     width:100px;
     font-size:15px;
@@ -34,6 +56,12 @@ body{
     background-color: #3e3e3e;
     color: #9c9a94;
     border: none ;
+}
+#plus{
+    display: inline ;
+}
+#b{
+    display: inline ;
 }
 #imgstyle{
     background-image: url(../images/shopping_cart.png);
@@ -62,7 +90,12 @@ h2{
     font-weight: normal ;
     line-height: 150%;
 }
-.jump{
+.jump_list:visited {
+    color: white ;
+    background-color: transparent;
+    text-decoration: none;
+}
+.jumplistbutton{
     margin: 20px 0px 0px 30px;;
     background: rgba(48, 150, 247, 0.97);
     width:125px;

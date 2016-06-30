@@ -6,13 +6,14 @@
     <link rel="stylesheet"  type="text/css"  href="../css/posCreate.css">
 </head>
 <body>
-<div id="headlist">
-    <div class="gongnengbutton">
-    <Button class="buttonstyle "style="margin-left:90px;font-size:20px" >Let's Go</Button>
-    <Button class="buttonstyle ">主页</Button>
-    <Button class="buttonstyle">商品列表</Button>
+<div id="headmodule">
+    <div class="merger">
+        <a href="goods_list.html"><Button class="listbutton">Let's Go</Button></a>
+        <a href="posHomepage.html" ><Button class="listbutton">主页</Button></a>
+        <a href="goods_list.html"><Button class="listbutton">商品列表</Button></a>
     </div>
-    <Button class="cartbutton"  id="imgbutton">购物车(0)</Button>
+    <Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div><div id="b">)</div></Button>
+    <script src="../JS/count.js"></script>
 </div>
     <div class="detail">
         <h1>Welcome to Let's Go!</h1>
@@ -22,7 +23,7 @@
         ，按照两件商品价格结算。我们需要实现一个名为printInventory函数，该函数能够将指定
         格式的数据作为参数输入，然后在浏览器的控制台中输出结算清单的文本。
         </h2>
-        <Button class="jump">Let's Go</Button>
+        <a class="jump_list " href="goods_list.html"><Button class="jumplistbutton">Let's Go</Button></a>
     </div>
 </body>
 </html>
