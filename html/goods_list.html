@@ -10,78 +10,25 @@
     <div class="merger">
         <Button class="listbutton " >Let's Go</Button>
         <a href="posHomepage.html" ><Button class="listbutton ">主页</Button></a>
-        <Button class="listbutton">商品列表</Button>
+        <Button class="listbutton" onclick="goodlist()">商品列表</Button>
     </div>
-    <Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div><div id="b">)</div></Button>
+    <a href="cart_list.html"><Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div><div id="b">)</div></Button></a>
     <script src="../JS/count.js"></script>
 </div>
 <div class="outborder">
     <div class="inborder">
         <h1>商品列表</h1>
     </div>
-<table class="outtable">
-    <tr class="attribute">
+    <table class="outtable" id="order">
+    <tr class="shoplist">
         <th>分类</th>
         <th>名称</th>
         <th>单价(元)</th>
         <th>单位</th>
         <th></th>
     </tr>
-    <tr class="goodstable" >
-        <td>饮料</td>
-        <td>可口可乐</td>
-        <td>3</td>
-        <td>瓶</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-    <tr class="goodstable" >
-        <td>饮料</td>
-        <td>雪碧</td>
-        <td>3</td>
-        <td>瓶</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-    <tr class="goodstable" >
-        <td>水果</td>
-        <td>苹果</td>
-        <td>5.5</td>
-        <td>斤</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-    <tr class="goodstable" >
-        <td>水果</td>
-        <td>荔枝</td>
-        <td>15</td>
-        <td>斤</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-    <tr class="goodstable" >
-        <td>生活用品</td>
-        <td>电池</td>
-        <td>2</td>
-        <td>个</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-    <tr class="goodstable" >
-        <td>食品</td>
-        <td>方便面</td>
-        <td>4.5</td>
-        <td>袋</td>
-        <td>
-            <Button class="addcartbutton" onclick="listcount ()">加入购物车</Button>
-        </td>
-    </tr>
-</table>
+    </table>
 </div>
+<script src="../JS/goods_list.js"></script>
 </body>
 </html>
