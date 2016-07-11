@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet"  type="text/css"  href="../css/goods_list.css">
+    <script src="../jquery-3.0.0.js"  ></script>
+    <script  src="../JS/goods_list.js" ></script>
 </head>
 <body>
-<div id="headmodule">
+<div id="head_navigation">
     <div class="merger">
-        <Button class="listbutton " >Let's Go</Button>
-        <a href="posHomepage.html" ><Button class="listbutton ">主页</Button></a>
-        <Button class="listbutton" onclick="goodlist()">商品列表</Button>
+        <Button class="list_button " >Let's Go</Button>
+        <a href="posHomepage.html" ><Button class="list_button ">主页</Button></a>
+        <Button  class="shopping_list_button">商品列表</Button>
     </div>
-    <a href="cart_list.html"><Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div><div id="b">)</div></Button></a>
-    <script src="../JS/count.js"></script>
+    <a href="cart_list.html"><Button class="cart_button"  id="imgstyle">购物车(<div id="plus"></div><div id="b">)</div></Button></a>
 </div>
-<div class="outborder">
-    <div class="inborder">
+<div class="out_border">
+    <div class="in_border">
         <h1>商品列表</h1>
     </div>
-    <table class="outtable" id="order">
-    <tr class="shoplist">
+    <table class="out_table" id="order">
+    <tr class="shop_list">
         <th>分类</th>
         <th>名称</th>
         <th>单价(元)</th>
@@ -29,6 +30,5 @@
     </tr>
     </table>
 </div>
-<script src="../JS/goods_list.js"></script>
 </body>
 </html>

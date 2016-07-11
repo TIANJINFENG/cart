@@ -111,6 +111,9 @@ h1{
 th{
     font-weight:300;
 }
+.list{
+    height:40px;
+}
 td{
     font-size:14px;
     height:40px;
