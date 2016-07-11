@@ -1,4 +1,4 @@
-#headmodule{
+#home_navigation{
           position: relative ;
           height: 50px;
           width: 1300px;
@@ -7,7 +7,7 @@
 body{
     margin: 0px;
 }
-.listbutton:hover {
+.list_button:hover {
     background-color: black;
     color: white ;
 }
@@ -34,7 +34,16 @@ a:active {
     width:78%;
     float: left;
 }
-.listbutton{
+.home_button{
+    height:49px;
+    width:110px;
+    font-size:15px;
+    font-weight:800;
+    background-color: black;
+    color: white ;
+    border:none;
+}
+.list_button{
     height:49px;
     width:110px;
     font-size:15px;
@@ -43,11 +52,11 @@ a:active {
     color: #9c9a94;
     border:none;
 }
-.cartbutton:hover {
+.cart_button:hover {
     background-color: black;
     color: white ;
 }
-.cartbutton{
+.cart_button{
     display:inline;
     height:50px;
     width:100px;
@@ -95,7 +104,7 @@ h2{
     background-color: transparent;
     text-decoration: none;
 }
-.jumplistbutton{
+.jump_list_button{
     margin: 20px 0px 0px 30px;;
     background: rgba(48, 150, 247, 0.97);
     width:125px;

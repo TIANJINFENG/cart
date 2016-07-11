@@ -1,4 +1,4 @@
-#headmodule{
+#head_navigation{
     position: relative ;
     height: 50px;
     width: 1300px;
@@ -7,7 +7,7 @@
 body{
     margin: 0px;
 }
-.listbutton:hover {
+.list_button:hover {
     background-color: black;
     color: white ;
 }
@@ -16,7 +16,17 @@ body{
     width:78%;
     float: left;
 }
-.listbutton{
+.shopping_list_button{
+    display: inline ;
+    height:49px;
+    width:110px;
+    font-size:15px;
+    font-weight:800;
+    background-color: black;
+    color: white ;
+    border:none;
+}
+.list_button{
     display: inline ;
     height:49px;
     width:110px;
@@ -39,11 +49,11 @@ a:hover {
     background-color: transparent;
     text-decoration: none;
 }
-.cartbutton:hover {
+.cart_button:hover {
     background-color: black;
     color: white ;
 }
-.cartbutton{
+.cart_button{
     display:inline;
     height:50px;
     width:100px;
@@ -65,18 +75,15 @@ a:hover {
     background-position:left center;
     background-size: 19px 19px;
 }
-/*#inventoymodule{
-    margin: 30px 0px 0px 120px;
-}*/
 table,th,td{
     border-collapse:collapse;
     border:1px solid  rgba(156, 154, 148, 0.39);
 }
-.outborder{
+.out_border{
     _height:40px;
     min-height:40px;
     margin: 30px 0px 0px 100px;
-    border-radius:10px;
+    border-radius:5px;
     border:1px solid rgba(156, 154, 148, 0.39);
     width:1100px;
 }
@@ -84,21 +91,21 @@ h1{
     font-weight: 600 ;
     text-align: center ;
     margin: 0px;
-    line-height:50px;
+    line-height:60px;
     font-size: 20px;
 }
-.inborder{
-    border-radius: 10px 10px 0px 0px;
+.in_border{
+    border-radius: 5px 5px 0px 0px;
     background-color: rgba(219, 215, 209, 0.45);
     border-bottom: 1px solid rgba(156, 154, 148, 0.39);
-    height:50px;
+    height:60px;
 }
-.outtable{
-    margin:20px 0px 10px 100px;
-    width:900px;
+.out_table{
+    margin:20px 0px 40px 20px;
+    width:1060px;
 }
-.shoplist{
-    height:30px;
+.shop_list{
+    height:35px;
     font-size: 15px;
 }
 th{
@@ -106,15 +113,21 @@ th{
 }
 td{
     font-size:14px;
-    height:45px;
+    height:40px;
     font-weight:100;
     text-align: center;
+    vertical-align:top;
+    padding-top:8px;
 }
-.addcartbutton{
+.add_cart_button {
+    border-color:black;
+    font-weight:800;
+    font-size:5px;
+    border: 20px;
     height: 30px;
+    width: 90px;
     background-color: #3096f7;
-    border-radius: 5px;
-    border: 0px ;
+    border-radius: 4px;
     color: #fffbf4;
 }
 
