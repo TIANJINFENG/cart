@@ -64,12 +64,9 @@ a:active {
     font-weight:800;
     background-color: #3e3e3e;
     color: #9c9a94;
-    border: none ;
+    border: none;
 }
 #plus{
-    display: inline ;
-}
-#b{
     display: inline ;
 }
 #imgstyle{
