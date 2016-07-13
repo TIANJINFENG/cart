@@ -60,9 +60,6 @@ a:active {
 #plus{
     display: inline ;
 }
-#b{
-    display: inline ;
-}
 #imgstyle{
     background-image: url(../images/shopping_cart.png);
     background-repeat: no-repeat;
@@ -83,8 +80,8 @@ table,th,td{
 }
 h1{
     font-weight: 600 ;
-    text-align: center ;
-    margin: 0px;
+    text-align: left ;
+    margin: 0px 0px 0px 20px;
     line-height:50px;
     font-size: 20px;
 }
@@ -92,11 +89,11 @@ h1{
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(219, 215, 209, 0.45);
     border-bottom: 1px solid rgba(156, 154, 148, 0.39);
-    height:50px;
+    height:60px;
 }
 .outtable{
-    margin:20px 0px 10px 100px;
-    width:900px;
+    margin:20px 20px 10px 20px;
+    width:1060px;
 }
 .shoplist{
     height:30px;

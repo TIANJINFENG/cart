@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <title>Cart</title>
     <link rel="stylesheet"  type="text/css"  href="../css/cart_list.css">
-    <script src="../JS/count.js"></script>
+    <script src="../jquery-3.0.0.js"  ></script>
+    <script src="../JS/cart_list.js"></script>
 </head>
 <body>
     <div id="headmodule">
         <div class="merger">
             <Button class="listbutton " >Let's Go</Button>
-            <a href="posHomepage.html" ><Button class="listbutton ">主页</Button></a>
+            <a href="pos_homepage.html" ><Button class="listbutton ">主页</Button></a>
             <a href="goods_list.html"><Button class="listbutton">商品列表</Button></a>
         </div>
-        <Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div><div id="b">)</div></Button>
+        <Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div>)</Button>
 
     </div>
     </div>
     <div class="outborder">
         <div class="inborder">
-            <h1>商品列表</h1>
+            <h1>购物清单</h1>
         </div>
         <table class="outtable" >
             <tr class="shoplist">
@@ -27,12 +28,11 @@
                 <th>名称</th>
                 <th>单价(元)</th>
                 <th>单位</th>
-                <th></th>
+                <th>数量</th>
+                <th>小计</th>
             </tr>
         </table>
-            <table id="order">
-            <tr class="goodstable">
-            </tr>
+            <table id="orders">
         </table>
     </div>
 </body>

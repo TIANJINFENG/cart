@@ -6,28 +6,37 @@
     <link rel="stylesheet"  type="text/css"  href="../css/goods_list.css">
     <script src="../jquery-3.0.0.js"  ></script>
     <script  src="../JS/goods_list.js" ></script>
+    <script class="item_template" type="text/template" >
+        <tr class='item_list'>
+            <td>kind</td>
+            <td>name</td>
+            <td>price</td>
+            <td>print</td>
+            <td><button class='add_order_button'>加入购物车</button></td>
+        </tr>
+    </script>
 </head>
 <body>
 <div id="head_navigation">
-    <div class="merger">
+    <div class="before_navigation">
         <Button class="list_button " >Let's Go</Button>
-        <a href="posHomepage.html" ><Button class="list_button ">主页</Button></a>
+        <a href="pos_homepage.html" ><Button class="list_button ">主页</Button></a>
         <Button  class="shopping_list_button">商品列表</Button>
     </div>
-    <a href="cart_list.html"><Button class="cart_button"  id="imgstyle">购物车(<div id="plus"></div><div id="b">)</div></Button></a>
+    <a href="cart_list.html"><Button class="cart_button"  id="cart_img_style">购物车(<div id="number"></div>)</Button></a>
 </div>
 <div class="out_border">
     <div class="in_border">
         <h1>商品列表</h1>
     </div>
-    <table class="out_table" id="order">
-    <tr class="shop_list">
-        <th>分类</th>
-        <th>名称</th>
-        <th>单价(元)</th>
-        <th>单位</th>
-        <th></th>
-    </tr>
+    <table class="inventory_table">
+        <tr class="shop_head">
+            <th>分类</th>
+            <th>名称</th>
+            <th>单价(元)</th>
+            <th>单位</th>
+            <th></th>
+        </tr>
     </table>
 </div>
 </body>

@@ -11,7 +11,7 @@ body{
     background-color: black;
     color: white ;
 }
-.merger{
+.before_navigation{
     padding-left:90px;
     width:78%;
     float: left;
@@ -56,20 +56,17 @@ a:hover {
 .cart_button{
     display:inline;
     height:50px;
-    width:100px;
+    width:110px;
     font-size:15px;
     font-weight:800;
     background-color: #3e3e3e;
     color: #9c9a94;
     border: none ;
 }
-#plus{
+#number{
     display: inline ;
 }
-#b{
-    display: inline ;
-}
-#imgstyle{
+#cart_img_style{
     background-image: url(../images/shopping_cart.png);
     background-repeat: no-repeat;
     background-position:left center;
@@ -100,18 +97,18 @@ h1{
     border-bottom: 1px solid rgba(156, 154, 148, 0.39);
     height:60px;
 }
-.out_table{
+.inventory_table{
     margin:20px 0px 40px 20px;
     width:1060px;
 }
-.shop_list{
+.shop_head{
     height:35px;
     font-size: 15px;
 }
 th{
     font-weight:300;
 }
-.list{
+.item_list{
     height:40px;
 }
 td{
@@ -122,7 +119,7 @@ td{
     vertical-align:top;
     padding-top:8px;
 }
-.add_cart_button {
+.add_order_button {
     border-color:black;
     font-weight:800;
     font-size:5px;
