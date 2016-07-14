@@ -1,4 +1,4 @@
-#headmodule{
+#head_navigation{
     position: relative ;
     height: 50px;
     width: 1300px;
@@ -7,7 +7,7 @@
 body{
     margin: 0px;
 }
-.listbutton:hover {
+.list_button:hover {
     background-color: black;
     color: white ;
 }
@@ -29,12 +29,12 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
-.merger{
+.before_navigation{
     padding-left:90px;
     width:78%;
     float: left;
 }
-.listbutton{
+.list_button{
     height:49px;
     width:110px;
     font-size:15px;
@@ -43,24 +43,24 @@ a:active {
     color: #9c9a94;
     border:none;
 }
-.cartbutton:hover {
+.cart_button:hover {
     background-color: black;
     color: white ;
 }
-.cartbutton{
+.cart_button{
     display:inline;
     height:50px;
-    width:100px;
+    width:110px;
     font-size:15px;
     font-weight:800;
     background-color: #3e3e3e;
     color: #9c9a94;
     border: none ;
 }
-#plus{
-    display: inline ;
+#number{
+    display:inline ;
 }
-#imgstyle{
+#cart_img_style{
     background-image: url(../images/shopping_cart.png);
     background-repeat: no-repeat;
     background-position:left center;
@@ -70,7 +70,7 @@ table,th,td{
     border-collapse:collapse;
     border:1px solid  rgba(156, 154, 148, 0.39);
 }
-.outborder{
+.out_border{
     _height:40px;
     min-height:40px;
     margin: 30px 0px 0px 100px;
@@ -85,35 +85,65 @@ h1{
     line-height:50px;
     font-size: 20px;
 }
-.inborder{
+.in_border{
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(219, 215, 209, 0.45);
     border-bottom: 1px solid rgba(156, 154, 148, 0.39);
     height:60px;
 }
-.outtable{
-    margin:20px 20px 10px 20px;
+.orders_table{
+    margin:20px 20px 30px 20px;
     width:1060px;
 }
-.shoplist{
+.cart_list_head{
     height:30px;
     font-size: 15px;
 }
 th{
-    font-weight:200;
+    font-weight:300;
 }
-.goodstable{
+.cart_items_list{
     height:45px;
-    font-size:14px;
 }
 td{
+    font-size:14px;
+    height:40px;
     font-weight:100;
     text-align: center;
+    vertical-align:top;
+    padding-top:8px;
 }
-.addcartbutton{
-    height: 30px;
-    background-color: #3096f7;
-    border-radius: 5px;
-    border: 0px ;
-    color: #fffbf4;
+.amount_table{
+    align:center;
+    width:120px;
+    height: 35px;
+}
+.reduce_count{
+    text-align:center;
+    vertical-align:top;
+    display: inline ;
+    width:40px;
+    height: 35px;
+    background-color: rgba(252, 252, 252, 0.02);
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgba(156, 154, 148, 0.39) ;
+    color: #181818;
+}
+.add_count{
+    text-align:center;
+    vertical-align:top;
+    display: inline ;
+    width:40px;
+    height: 35px;
+    background-color: rgba(252, 252, 252, 0.02);
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgba(156, 154, 148, 0.39) ;
+    color: #181818;
+}
+#amount{
+    display: inline ;
+    width:40px;
+    height: 31px;
+    border: 1px solid rgba(156, 154, 148, 0.39);
+    text-align:center;
 }

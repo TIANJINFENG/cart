@@ -6,24 +6,36 @@
     <link rel="stylesheet"  type="text/css"  href="../css/cart_list.css">
     <script src="../jquery-3.0.0.js"  ></script>
     <script src="../JS/cart_list.js"></script>
+    <script class="cart_item_template" type="text/template">
+        <tr class='cart_items_list'>
+            <td>kind</td>
+            <td>name</td>
+            <td>price</td>
+            <td>print</td>
+            <td>
+                <button class="reduce_count">-</button><input type="text"  id="amount" value="0" /><button class="add_count">+</button>
+            </td>
+            <td>(原价：)</td>
+        </tr>
+    </script>
 </head>
 <body>
-    <div id="headmodule">
-        <div class="merger">
-            <Button class="listbutton " >Let's Go</Button>
-            <a href="pos_homepage.html" ><Button class="listbutton ">主页</Button></a>
-            <a href="goods_list.html"><Button class="listbutton">商品列表</Button></a>
+<div>
+    <div id="head_navigation">
+        <div class="before_navigation">
+            <Button class="list_button " >Let's Go</Button>
+            <a href="pos_homepage.html" ><Button class="list_button ">主页</Button></a>
+            <a href="goods_list.html"><Button class="list_button">商品列表</Button></a>
         </div>
-        <Button class="cartbutton"  id="imgstyle">购物车(<div id="plus">0</div>)</Button>
-
+        <Button class="cart_button"  id="cart_img_style">购物车(<div id="number">0</div>)</Button>
     </div>
-    </div>
-    <div class="outborder">
-        <div class="inborder">
+</div>
+<div class="out_border">
+        <div class="in_border">
             <h1>购物清单</h1>
         </div>
-        <table class="outtable" >
-            <tr class="shoplist">
+        <table class="orders_table" >
+            <tr class="cart_list_head">
                 <th>分类</th>
                 <th>名称</th>
                 <th>单价(元)</th>
@@ -32,8 +44,6 @@
                 <th>小计</th>
             </tr>
         </table>
-            <table id="orders">
-        </table>
-    </div>
+</div>
 </body>
 </html>
