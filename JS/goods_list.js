@@ -25,9 +25,11 @@ function listtt(button, item){
             item_string = JSON.stringify(item);
             localStorage.setItem("ID"+button,item_string);
         }
-        else{
-            item.count++;
-            item_string = JSON.stringify(item);
+          else{
+            var counts= localStorage.getItem("ID"+button);
+            counts=JSON.parse( counts);
+            counts.count++;
+            item_string = JSON.stringify(counts);
             localStorage.setItem("ID"+button,item_string);
         }
     });
