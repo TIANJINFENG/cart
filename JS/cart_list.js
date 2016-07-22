@@ -158,40 +158,34 @@ function get_local_storage(cart_items_barcade){
 function goods_initial_items(){
     var cart_items_barcade=Items_barcode();
     var goods_sum_price=0;
-    replace_shopping_items(cart_items_barcade);
-    show_shopping_unit_string(cart_items_barcade)
-    goods_sum_price = show_shopping_initial_items(cart_items_barcade,goods_sum_price);
-    $("#sum_goods_money").html((goods_sum_price).toFixed(2));
-    localStorage.setItem("total",goods_sum_price.toFixed(2));
-}
-function show_shopping_unit_string(cart_items_barcade){
     for(var i=0;i<cart_items_barcade.length;i++){
-        if(localStorage.getItem("cart"+cart_items_barcade[i])==null){continue ;}
-        var local_items=get_local_storage(cart_items_barcade[i]);
-        if(local_items.单位!="斤"){
-            $(".save_unit#save_print"+cart_items_barcade[i]+"").html("元");
-            $(".original_before#before_pose"+cart_items_barcade[i]+"").html("(原价:");
-            $(".original_behind#behind_pose"+cart_items_barcade[i]+"").html(")");
+        if(localStorage.getItem("cart"+cart_items_barcade[i])!=null){
+            var local_items=get_local_storage(cart_items_barcade[i]);
+            replace_shopping_items(local_items);
+            show_shopping_unit_string(local_items,cart_items_barcade[i])
+            goods_sum_price = show_shopping_initial_items(cart_items_barcade[i],local_items,goods_sum_price);
+            $("#sum_goods_money").html((goods_sum_price).toFixed(2));
+            localStorage.setItem("total",goods_sum_price.toFixed(2));
         }
     }
 }
-function show_shopping_initial_items(cart_items_barcade,goods_sum_price){
-    for(var i=0;i<cart_items_barcade.length;i++){
-        if(localStorage.getItem("cart"+cart_items_barcade[i])==null){continue ;}
-        var local_items=get_local_storage(cart_items_barcade[i]);
-        $("input#quntitey"+ cart_items_barcade[i]+"").val(local_items.count);
-        $(".goods_save_price#shoping_save_price"+cart_items_barcade[i]+"").html(local_items.save);
-        $(".goods_little_price#goods_original_price"+cart_items_barcade[i]+"").html(local_items.original_price);
+function show_shopping_unit_string(local_items,cart_items_barcade){
+        if(local_items.单位!="斤"){
+            $(".save_unit#save_print"+cart_items_barcade+"").html("元");
+            $(".original_before#before_pose"+cart_items_barcade+"").html("(原价:");
+            $(".original_behind#behind_pose"+cart_items_barcade+"").html(")");
+        }
+}
+function show_shopping_initial_items(cart_items_barcade,local_items,goods_sum_price){
+        $("input#quntitey"+ cart_items_barcade+"").val(local_items.count);
+        $(".goods_save_price#shoping_save_price"+cart_items_barcade+"").html(local_items.save);
+        $(".goods_little_price#goods_original_price"+cart_items_barcade+"").html(local_items.original_price);
         var shopping_original_price=(local_items.original_price);
         goods_sum_price+=(shopping_original_price);
-    }
     return goods_sum_price;
 }
-function replace_shopping_items(cart_items_barcade) {
-    for(var i=0;i<cart_items_barcade.length;i++){
-        if(localStorage.getItem("cart"+cart_items_barcade[i])==null){continue ;}
+function replace_shopping_items(local_items) {
         var shopping_string = $(".cart_item_template").html();
-        var local_items=get_local_storage(cart_items_barcade[i]);
         var shopping_item =
             shopping_string.replace(/kind/,local_items.分类)
                 .replace(/name/,local_items.名称)
@@ -207,5 +201,4 @@ function replace_shopping_items(cart_items_barcade) {
                 .replace(/behind_pose/, "behind_pose"+local_items.ID)
                 .replace(/save_print/, "save_print"+local_items.ID);
         $(".orders_table").append(shopping_item);
-    }
 }
