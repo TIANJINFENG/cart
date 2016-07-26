@@ -7,15 +7,15 @@
     <script src="../jquery-3.0.0.js"  ></script>
     <script src="../JS/cart_list.js"></script>
     <script class="cart_item_template" type="text/template">
-        <tr class='cart_items_list'>
+        <tr class='cart_items_list' id="delate">
             <td>kind</td>
             <td>name</td>
             <td>price</td>
-            <td>print</td>
+            <td>unit</td>
             <td>
-                <button class="reduce_count">-</button><input type="text"  id="amount" value="0" /><button class="add_count">+</button>
+                <button class="reduce_count" >-</button><input type="text"  class="amount"  value="0"><button class="add_count">+</button>
             </td>
-            <td>(原价：)</td>
+            <td><div class="goods_little_price" ></div></td>
         </tr>
     </script>
 </head>
@@ -24,7 +24,7 @@
     <div id="head_navigation">
         <div class="before_navigation">
             <Button class="list_button " >Let's Go</Button>
-            <a href="pos_homepage.html" ><Button class="list_button ">主页</Button></a>
+            <a href="pos_homepage.html"><Button class="list_button ">主页</Button></a>
             <a href="goods_list.html"><Button class="list_button">商品列表</Button></a>
         </div>
         <Button class="cart_button"  id="cart_img_style">购物车(<div id="number">0</div>)</Button>
@@ -36,14 +36,16 @@
         </div>
         <table class="orders_table" >
             <tr class="cart_list_head">
-                <th>分类</th>
-                <th>名称</th>
-                <th>单价(元)</th>
-                <th>单位</th>
-                <th>数量</th>
-                <th>小计</th>
+                <th width="10%">分类</th>
+                <th width="15%">名称</th>
+                <th width="15%">单价(元)</th>
+                <th width="10%">单位</th>
+                <th width="23%">数量</th>
+                <th width="27%">小计</th>
             </tr>
         </table>
+    <div class="sum_money"><p>总价：<div class="sum_price" id="sum_goods_money"></div>元</p></div>
+    <a href="payment.html"><button class="pay">付款</button></a>
 </div>
 </body>
 </html>

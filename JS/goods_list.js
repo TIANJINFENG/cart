@@ -8,7 +8,7 @@ $(document).ready(function(){
         {"kinds":"水果","name":"荔枝","price":15,"unit":"斤",ID:"barcade4"},
         {"kinds":"生活用品","name":"电池","price":2,"unit":"个",ID:"barcade5"},
         {"kinds":"食品","name":"方便面","price":4.5,"unit":"袋",ID:"barcade6"}];
-    var preferential_items=["barcade1","barcade2","barcade6"];
+    var preferential_items=["barcade1","barcade2","barcade5","barcade6"];
     show_count();
     show_good_list(item);
     add_count_cart();
@@ -32,7 +32,7 @@ function add_goods_cart(button, item){
             item.original_price = (item.count*item.price);
             if(item.unit!="斤"){
                 item.save = (item.count-parseInt(item.count/3))*item.price;
-            }
+            }else{item.save= item.original_price ;}
             item_string = JSON.stringify(item);
             localStorage.setItem("cart"+button,item_string);
         }
@@ -44,23 +44,26 @@ function add_goods_cart(button, item){
             if(counts.unit!="斤"){
                 counts.save = (counts.count-parseInt(counts.count/3))*counts.price;
             }
+            else{
+                counts.save=counts.original_price;}
+
             item_string = JSON.stringify(counts);
             localStorage.setItem("cart"+button,item_string);
         }
     });
 }
 function show_count() {
-        if (localStorage.getItem("clicks") == null) {
-            localStorage.setItem("clicks", 0);
+        if (localStorage.getItem("count") == null) {
+            localStorage.setItem("count", 0);
         }
-        var num = localStorage.getItem("clicks");
+        var num = localStorage.getItem("count");
         $("#number").text(num);
 }
 function add_count_cart() {
     $(".add_order_button").click(function () {
         var count = $("#number").text();
         count = parseInt(count) + 1;
-        localStorage.setItem("clicks", count);
+        localStorage.setItem("count", count);
         $("#number").text(count);
     });
 }

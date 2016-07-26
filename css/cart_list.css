@@ -92,6 +92,7 @@ h1{
     height:60px;
 }
 .orders_table{
+    table-layout: fixed;
     margin:20px 20px 30px 20px;
     width:1060px;
 }
@@ -113,15 +114,9 @@ td{
     vertical-align:top;
     padding-top:8px;
 }
-.amount_table{
-    align:center;
-    width:120px;
-    height: 35px;
-}
 .reduce_count{
     text-align:center;
     vertical-align:top;
-    display: inline ;
     width:40px;
     height: 35px;
     background-color: rgba(252, 252, 252, 0.02);
@@ -132,7 +127,6 @@ td{
 .add_count{
     text-align:center;
     vertical-align:top;
-    display: inline ;
     width:40px;
     height: 35px;
     background-color: rgba(252, 252, 252, 0.02);
@@ -140,10 +134,35 @@ td{
     border: 1px solid rgba(156, 154, 148, 0.39) ;
     color: #181818;
 }
-#amount{
-    display: inline ;
+.amount{
     width:40px;
     height: 31px;
     border: 1px solid rgba(156, 154, 148, 0.39);
     text-align:center;
+}
+.goods_little_price{
+    display: inline;
+}
+.sum_money{
+    display: inline;
+    margin-left: 950px;
+    margin-bottom: 10px;
+}
+p{
+    display: inline;
+}
+.sum_price{
+    display: inline;
+}
+.pay{
+    margin-left: 1000px;
+    margin-bottom: 20px;
+    font-weight:800;
+    font-size:15px;
+    border: 1px solid rgba(156, 154, 148, 0.39);
+    border-radius: 4px ;
+    color: #fffbf4;
+    height: 35px;
+    width: 60px;
+    background-color: #3096f7;;
 }

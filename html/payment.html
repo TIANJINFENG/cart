@@ -1,10 +1,68 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>pay</title>
+    <link rel="stylesheet"  type="text/css"  href="../css/payment.css">
+    <script src="../jquery-3.0.0.js"  ></script>
+    <script src="../JS/payment.js"></script>
+    <script class="cart_item_template" type="text/template">
+        <tr class='cart_items_list' id="delate">
+            <td>kind</td>
+            <td>name</td>
+            <td>price</td>
+            <td>unit</td>
+            <td>count</td>
+            <td><div class="goods_little_price" ></div></td>
+        </tr>
+    </script>
+    <script class="pay_item_template" type="text/template">
+        <tr class='pay_items_list' id="save_items">
+            <td>kind</td>
+            <td>name</td>
+            <td>count</td>
+        </tr>
+    </script>
 </head>
 <body>
-
+<div>
+    <div id="head_navigation">
+        <div class="before_navigation">
+            <Button class="list_button " >Let's Go</Button>
+            <a href="pos_homepage.html"><Button class="list_button ">主页</Button></a>
+            <a href="goods_list.html"><Button class="list_button">商品列表</Button></a>
+        </div>
+        <a href= "cart_list.html" ><Button class="cart_button"  id="cart_img_style">购物车(<div id="number">0</div>)</Button></a>
+    </div>
+</div>
+<div class="out_border">
+    <div class="in_border">
+        <h1>购物清单</h1>
+    </div>
+    <div class="time">123</div>
+    <table class="orders_table" >
+        <tr class="cart_list_head">
+            <th width="10%">分类</th>
+            <th width="15%">名称</th>
+            <th width="15%">单价(元)</th>
+            <th width="10%">单位</th>
+            <th width="23%">数量</th>
+            <th width="27%">小计</th>
+        </tr>
+    </table>
+    <div class="in_border">
+            <h1>赠送商品</h1>
+        </div>
+        <table class="save_table" >
+            <tr class="cart_list_head">
+                <th width="15%">分类</th>
+                <th width="30%">名称</th>
+                <th width="15%">数量</th>
+            </tr>
+        </table>
+    <div class="sum_money"><p>总价：<div class="sum_price" id="sum_goods_money"></div>元</p></div>
+    <div class="sum_money"><p>节省：<div class="sum_price" id="save_goods_money"></div>元</p></div>
+    <a href="goods_list.html"><button class="pay" id="pay_delete">确认</button></a>
+</div>
 </body>
 </html>
