@@ -107,56 +107,36 @@ h1{
     width:1060px;
 }
 .cart_list_head{
-    height:30px;
+    height:35px;
+    font-size: 15px;
+}
+.save_list_head{
+    height:35px;
     font-size: 15px;
 }
 th{
-    font-weight:300;
+    font-weight:700;
 }
 .cart_items_list{
-    height:45px;
+    height:35px;
 }
 td{
     font-size:14px;
-    height:40px;
+    height:35px;
     font-weight:100;
     text-align: center;
-    vertical-align:top;
-    padding-top:8px;
-}
-.reduce_count{
-    text-align:center;
-    vertical-align:top;
-    width:40px;
-    height: 35px;
-    background-color: rgba(252, 252, 252, 0.02);
-    border-radius: 5px 0px 0px 5px;
-    border: 1px solid rgba(156, 154, 148, 0.39) ;
-    color: #181818;
-}
-.add_count{
-    text-align:center;
-    vertical-align:top;
-    width:40px;
-    height: 35px;
-    background-color: rgba(252, 252, 252, 0.02);
-    border-radius: 0px 5px 5px 0px;
-    border: 1px solid rgba(156, 154, 148, 0.39) ;
-    color: #181818;
-}
-.amount{
-    width:40px;
-    height: 31px;
-    border: 1px solid rgba(156, 154, 148, 0.39);
-    text-align:center;
 }
 .goods_little_price{
     display: inline;
 }
 .sum_money{
     display: inline;
-    margin-left: 950px;
-    margin-bottom: 10px;
+    margin:0px 0px 0px 980px;
+    font-size:15px;
+}
+.save_money{
+    margin:10px 0px 0px 980px;
+    font-size:15px;
 }
 p{
     display: inline;
@@ -165,8 +145,7 @@ p{
     display: inline;
 }
 .pay{
-    margin-left: 1000px;
-    margin-bottom: 20px;
+    margin:20px 0px 20px 1020px;
     font-weight:800;
     font-size:15px;
     border: 1px solid rgba(156, 154, 148, 0.39);

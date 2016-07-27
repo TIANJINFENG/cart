@@ -5,14 +5,27 @@
  * Created by tianjinfeng on 16-7-12.
  */
 $(document).ready(function(){
-    load_goods_initial_items();
+    load_order_initial_items();
     show_time();
 });
-function show_time(){
-    var date= new Date();
-    $(".time").html(date.getFullYear()+"年"+date.getMonth()+"月"+date.getDate()+"日 "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds());
+function dateDigitToString (num) {
+    return num < 10 ? '0' + num : num;
 }
-function load_goods_initial_items(){
+function get_moment(){
+    var currentDate = new Date(),
+        year = dateDigitToString(currentDate.getFullYear()),
+        month = dateDigitToString(currentDate.getMonth() + 1),
+        date = dateDigitToString(currentDate.getDate()),
+        hour = dateDigitToString(currentDate.getHours()),
+        minute = dateDigitToString(currentDate.getMinutes()),
+        second = dateDigitToString(currentDate.getSeconds()),
+        formattedDateString = year + '年' + month + '月' + date + '日 ' + hour + ':' + minute + ':' + second;
+    return formattedDateString;
+}
+function show_time(){
+    $(".time").html(get_moment());
+}
+function load_order_initial_items(){
     var cart_items_barcade=get_local_string("items_barcade");
     var save_total = 0;
     $.each(cart_items_barcade,function(index,id){
