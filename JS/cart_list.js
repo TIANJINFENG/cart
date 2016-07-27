@@ -15,7 +15,7 @@ function load_goods_initial_items(){
             replace_goods_items(local_items,id);
         }
     });
-    set_local("total",goods_total.toFixed(2));
+    set_local("total",goods_total);
     show_goods_total();
 }
 function replace_goods_items(local_items,id) {
@@ -71,7 +71,7 @@ function compute_goods_items(cart_items,num){
     return cart_items;
 }
 function compute_shopping_total(cart_items,num){
-    var  money=Number(get_local_value("total"));
+    var  money=Number(get_local_string("total"));
     var total_money=money+(num*cart_items.price);
     set_local("total",total_money.toFixed(2));
 }
@@ -96,7 +96,7 @@ function show_shopping_sub_total(local_items,cart_items_barcade){
     }
 }
 function show_goods_total(){
-    var money=Number(get_local_value("total"));
+    var money=Number(get_local_string("total"));
     show("#sum_goods_money",Number(money).toFixed(2));
 }
 function show_cart_goods_count(){
@@ -105,10 +105,6 @@ function show_cart_goods_count(){
 }
 function set_local(key,item){
     localStorage.setItem(key,item);
-}
-function get_local_value(key){
-    var value = localStorage.getItem(key);
-    return value;
 }
 function get_local_string(key){
     var value_string = localStorage.getItem(key);
